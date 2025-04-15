@@ -10,7 +10,7 @@ public class Loginpage extends Basepage
 		{
 			super(driver);
 		}
-	
+	    
 		@FindBy(xpath="//input[@id='user-name']")
 		WebElement txtUsername;
 		
@@ -21,18 +21,22 @@ public class Loginpage extends Basepage
 		WebElement btnLogin;
 				
 		public void setUsername(String uname)
-		{
+		{   System.out.println("Inside page object class> first method");
 			txtUsername.sendKeys(uname);
+			System.out.println("Checking whether username field is detected");
 		}
 		
 		public void setPassword(String psw)
 		{
+			 System.out.println("Inside page object class> second method");
 			txtPassword.sendKeys(psw);
 		}
 		
 		public void clickLogin()
-		{
+		{  System.out.println("Inside page object class> Before clicking login");
 			btnLogin.click();
+			System.out.println("Inside page object class> After clicking login");
+			
 		}
 		
 }
