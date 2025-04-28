@@ -56,6 +56,13 @@
     <version>5.1.2</version>
 </dependency>
 
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.8.0</version> 
+    <scope>test</scope>
+</dependency>
+
 <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-email -->
 <dependency>
     <groupId>org.apache.commons</groupId>
@@ -75,6 +82,11 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M5</version>
+                <configuration>
+                <suiteXmlFiles>
+                <suiteXmlFile>mastertestng.xml</suiteXmlFile>
+                </suiteXmlFiles>
+                </configuration>
             </plugin>
             
                <!-- Compiler plugin to set Java version -->
@@ -83,8 +95,8 @@
             <artifactId>maven-compiler-plugin</artifactId>
             <version>3.8.1</version> <!-- or later version -->
             <configuration>
-                <source>23</source>   <!-- or 11 or later if you're using Java 11 or higher -->
-                <target>23</target>   <!-- or 11 or later -->
+                <source>17</source>   <!-- or 11 or later if you're using Java 11 or higher -->
+                <target>17</target>   <!-- or 11 or later -->
             </configuration>
         </plugin>
         </plugins>

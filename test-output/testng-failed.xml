@@ -1,20 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="os" value="Linux"/>
-  <parameter name="browser" value="firefox"/>
+  <parameter name="os" value="Windows"/>
+  <parameter name="browser" value="chrome"/>
   <listeners>
     <listener class-name="utilities.ExtentReportManager"/>
   </listeners>
-  <test thread-count="5" name="Docker-Test-Firefox(failed)">
+  <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="testCases.TC001_Login_Test">
+        <methods>
+          <include name="verify_login_Test"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testCases.TC001_Login_Test -->
       <class name="testCases.TC002_AddtoCart_Test">
         <methods>
           <include name="verify_AddtpCart"/>
           <include name="setup"/>
           <include name="tearDown"/>
+          <include name="verify_reactclick"/>
         </methods>
       </class> <!-- testCases.TC002_AddtoCart_Test -->
     </classes>
-  </test> <!-- Docker-Test-Firefox(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
