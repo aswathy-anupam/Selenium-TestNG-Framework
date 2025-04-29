@@ -24,6 +24,6 @@
     <classes>
       <class name="testCases.TC001_Login_Test"/>
     </classes>
-  </test>For GitHub <!-- Test -->
+  </test> <!-- Test -->
   
 </suite> <!-- Suite -->
