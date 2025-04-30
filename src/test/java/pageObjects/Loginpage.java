@@ -11,7 +11,7 @@ public class Loginpage extends Basepage
 			super(driver);
 		}
 	    
-		@FindBy(xpath="//input[@id='user-name']")
+		@FindBy(xpath="//input[@id='user-namee']")
 		WebElement txtUsername;
 		
 		@FindBy(xpath="//input[@id='password']")
