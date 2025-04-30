@@ -16,7 +16,7 @@ public class Homepage extends Basepage
 		super(driver);
 	}
 	
-	  @FindBy(xpath="//div[text()='Swag Labsss']")
+	  @FindBy(xpath="//div[text()='Swag Labs']")
 	  WebElement msgHeading;
 	  
 	  @FindBy(xpath="//button[@id='add-to-cart-sauce-labs-backpack']")
