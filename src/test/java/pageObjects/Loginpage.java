@@ -21,7 +21,7 @@ public class Loginpage extends Basepage
 		WebElement btnLogin;
 		
 		@FindBy(xpath="//input[@id='login-button']")
-		WebElement btnLogin5;
+		WebElement btnLogin6;
 				
 		public void setUsername(String uname)
 		{   System.out.println("Inside page object class> first method");
