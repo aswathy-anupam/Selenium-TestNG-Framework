@@ -30,7 +30,7 @@ public class Homepage extends Basepage
 	  
 
 	  @FindBy(xpath="//a[@id='logout_sidebar_link']")
-	    WebElement Mnulogout11;
+	    WebElement Mnulogout12;
 	  
 	  public String isHeadingExists()
 	 {
