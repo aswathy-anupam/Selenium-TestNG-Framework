@@ -45,8 +45,13 @@ public class Homepage extends Basepage
 				}
 	 }	
 		
-		public void clickAddCart()
+		public void clickAddCart() throws InterruptedException
 		{
+			Thread.sleep(3000);	
+			//Actions actions = new Actions(driver);
+			//actions.sendKeys(Keys.TAB, Keys.TAB, Keys.ENTER).perform();
+			//Thread.sleep(3000);	
+			driver.findElement(By.tagName("body")).sendKeys(Keys.ENTER);
 			BtnAddCart.click();
 			
 		}
