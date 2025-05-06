@@ -11,14 +11,20 @@ public class Loginpage extends Basepage
 			super(driver);
 		}
 	    
-		@FindBy(xpath="//input[@id='user-namee']")
-		WebElement txtUsername;
+		@FindBy(xpath="//input[@id='user-name']")
+        WebElement txtUsername;
 		
 		@FindBy(xpath="//input[@id='password']")
 		WebElement txtPassword;
 		
 		@FindBy(xpath="//input[@id='login-button']")
 		WebElement btnLogin;
+		
+		@FindBy(xpath="//input[@id='login-button']")
+		WebElement btnLogin6;
+		
+		@FindBy(xpath="//input[@id='user-name']")
+        WebElement txtUsername21;
 				
 		public void setUsername(String uname)
 		{   System.out.println("Inside page object class> first method");

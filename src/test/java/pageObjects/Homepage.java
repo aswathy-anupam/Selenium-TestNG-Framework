@@ -16,7 +16,7 @@ public class Homepage extends Basepage
 		super(driver);
 	}
 	
-	  @FindBy(xpath="//div[text()='Swag Labss']")
+	  @FindBy(xpath="//div[text()='Swag Labs']")
 	  WebElement msgHeading;
 	  
 	  @FindBy(xpath="//button[@id='add-to-cart-sauce-labs-backpack']")
@@ -27,6 +27,10 @@ public class Homepage extends Basepage
 	  
 	  @FindBy(xpath="//a[@id='logout_sidebar_link']")
 	    WebElement Mnulogout;
+	  
+
+	  @FindBy(xpath="//a[@id='logout_sidebar_link']")
+	    WebElement Mnulogout13;
 	  
 	  public String isHeadingExists()
 	 {
@@ -41,8 +45,13 @@ public class Homepage extends Basepage
 				}
 	 }	
 		
-		public void clickAddCart()
+		public void clickAddCart() throws InterruptedException
 		{
+			Thread.sleep(3000);	
+			//Actions actions = new Actions(driver);
+			//actions.sendKeys(Keys.TAB, Keys.TAB, Keys.ENTER).perform();
+			//Thread.sleep(3000);	
+			driver.findElement(By.tagName("body")).sendKeys(Keys.ENTER);
 			BtnAddCart.click();
 			
 		}

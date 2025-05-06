@@ -18,8 +18,9 @@ public class TC002_AddtoCart_Test extends Baseclass
 {
 	
 	@Test
-	public void verify_AddtpCart() 
+	public void verify_AddtpCart() throws InterruptedException 
 	{
+		
 		Homepage hp1=new Homepage(driver);
 		hp1.clickAddCart(); 
 		

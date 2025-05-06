@@ -17,8 +17,8 @@ public class TC001_Login_Test extends Baseclass
 	{
          try
          {
-		 Loginpage lp=new Loginpage(driverr);
-		 System.out.println("Checking valid Loginnn");
+		 Loginpage lp=new Loginpage(driver);
+		 System.out.println("Checking valid Login");
 		 lp.setUsername(uname);
 		 lp.setPassword(pwd);
 		 lp.clickLogin();
