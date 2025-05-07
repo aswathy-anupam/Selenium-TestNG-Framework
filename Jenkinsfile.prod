@@ -1,0 +1,11 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                git branch: 'main', url: 'https://github.com/aswathy-anupam/Selenium-TestNG-Framework.git'
+                bat 'mvn clean package'  // Safe for local/GitHub
+            }
+        }
+    }
+}
